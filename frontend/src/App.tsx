@@ -7,7 +7,6 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Transactions from './pages/Transactions';
-import Categories from './pages/Categories';
 import Budgets from './pages/Budgets';
 import Reports from './pages/Reports';
 
@@ -34,15 +33,15 @@ function App() {
           
           <Route element={<ProtectedRoute />}>
             <Route element={<DashboardLayout />}>
+              <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/transactions" element={<Transactions />} />
-              <Route path="/categories" element={<Categories />} />
               <Route path="/budgets" element={<Budgets />} />
               <Route path="/reports" element={<Reports />} />
             </Route>
           </Route>
           
-          <Route path="*" element={<Navigate to="/login" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>

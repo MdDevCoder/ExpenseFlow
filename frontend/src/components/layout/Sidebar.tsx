@@ -1,12 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Wallet, FileText, Settings } from 'lucide-react';
+import { Home, Receipt, Wallet, FileText } from 'lucide-react';
 import { cn } from '../ui/Button';
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: Home },
+  { name: 'Transactions', href: '/transactions', icon: Receipt },
   { name: 'Budgets', href: '/budgets', icon: Wallet },
   { name: 'Reports', href: '/reports', icon: FileText },
-  { name: 'Settings', href: '/settings', icon: Settings },
 ];
 
 export const Sidebar = () => {
