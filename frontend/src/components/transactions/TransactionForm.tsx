@@ -105,7 +105,7 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Currency</label>
           <select
             {...register('currency')}
-            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:cursor-not-allowed disabled:opacity-50 dark:text-white"
+            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:cursor-not-allowed disabled:opacity-50 dark:text-gray-100"
           >
             <option value="USD" className="dark:bg-gray-800">USD</option>
             <option value="EUR" className="dark:bg-gray-800">EUR</option>
@@ -122,7 +122,7 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Type</label>
           <select
             {...register('type')}
-            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-white"
+            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-gray-100"
           >
             <option value="EXPENSE" className="dark:bg-gray-800">Expense</option>
             <option value="INCOME" className="dark:bg-gray-800">Income</option>
@@ -132,7 +132,7 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Status</label>
           <select
             {...register('status')}
-            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-white"
+            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-gray-100"
           >
             <option value="COMPLETED" className="dark:bg-gray-800">Completed</option>
             <option value="PENDING" className="dark:bg-gray-800">Pending</option>
@@ -146,7 +146,7 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Category</label>
           <select
             {...register('category')}
-            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-white"
+            className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-gray-100"
           >
             {DEFAULT_CATEGORIES.map(c => (
               <option key={c} value={c} className="dark:bg-gray-800">{c}</option>
@@ -166,7 +166,7 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Notes (Optional)</label>
         <textarea
           {...register('notes')}
-          className="flex w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-h-[80px] dark:text-white"
+          className="flex w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 min-h-[80px] dark:text-gray-100"
           placeholder="Add any extra details here..."
         />
         {errors.notes && <p className="mt-1 text-sm text-red-500">{errors.notes.message}</p>}
