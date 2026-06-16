@@ -1,6 +1,6 @@
 # ExpenseFlow 
 
-**[Live Demo](https://expense-flow-kago08efw-shaikh-muhammad-s-projects0423.vercel.app/)**
+**[Live Demo](https://expense-flow-liard-kappa.vercel.app/)**
 
 ![ExpenseFlow Hero](frontend/src/assets/hero.png) <!-- Ensure you have a hero image or remove this if not present -->
 
