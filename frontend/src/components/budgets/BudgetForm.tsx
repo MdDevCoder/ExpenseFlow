@@ -89,7 +89,7 @@ export const BudgetForm = ({ initialData, onSubmit, onCancel, isSubmitting }: Pr
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm dark:bg-gray-800 dark:border-gray-600 dark:text-white p-2.5 border"
         >
           {DEFAULT_CATEGORIES.map(cat => (
-            <option key={cat} value={cat}>{cat}</option>
+            <option key={cat} value={cat} className="dark:bg-gray-800">{cat}</option>
           ))}
         </select>
         {errors.category && (
@@ -126,9 +126,9 @@ export const BudgetForm = ({ initialData, onSubmit, onCancel, isSubmitting }: Pr
           }}
           className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm dark:bg-gray-800 dark:border-gray-600 dark:text-white p-2.5 border"
         >
-          <option value="WEEKLY">Weekly</option>
-          <option value="MONTHLY">Monthly</option>
-          <option value="YEARLY">Yearly</option>
+          <option value="WEEKLY" className="dark:bg-gray-800">Weekly</option>
+          <option value="MONTHLY" className="dark:bg-gray-800">Monthly</option>
+          <option value="YEARLY" className="dark:bg-gray-800">Yearly</option>
         </select>
         {errors.period && (
           <p className="mt-1 text-sm text-red-600 dark:text-red-400">{errors.period.message}</p>

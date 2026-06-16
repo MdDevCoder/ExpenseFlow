@@ -107,10 +107,10 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
             {...register('currency')}
             className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:cursor-not-allowed disabled:opacity-50 dark:text-white"
           >
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="INR">INR</option>
+            <option value="USD" className="dark:bg-gray-800">USD</option>
+            <option value="EUR" className="dark:bg-gray-800">EUR</option>
+            <option value="GBP" className="dark:bg-gray-800">GBP</option>
+            <option value="INR" className="dark:bg-gray-800">INR</option>
           </select>
           {errors.currency && <p className="mt-1 text-sm text-red-500">{errors.currency.message}</p>}
         </div>
@@ -124,8 +124,8 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
             {...register('type')}
             className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-white"
           >
-            <option value="EXPENSE">Expense</option>
-            <option value="INCOME">Income</option>
+            <option value="EXPENSE" className="dark:bg-gray-800">Expense</option>
+            <option value="INCOME" className="dark:bg-gray-800">Income</option>
           </select>
         </div>
         <div>
@@ -134,8 +134,8 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
             {...register('status')}
             className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-white"
           >
-            <option value="COMPLETED">Completed</option>
-            <option value="PENDING">Pending</option>
+            <option value="COMPLETED" className="dark:bg-gray-800">Completed</option>
+            <option value="PENDING" className="dark:bg-gray-800">Pending</option>
           </select>
         </div>
       </div>
@@ -149,7 +149,7 @@ export const TransactionForm: React.FC<Props> = ({ initialData, onSubmit, onCanc
             className="flex h-10 w-full rounded-md border border-gray-300 dark:border-gray-700 bg-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:text-white"
           >
             {DEFAULT_CATEGORIES.map(c => (
-              <option key={c} value={c}>{c}</option>
+              <option key={c} value={c} className="dark:bg-gray-800">{c}</option>
             ))}
           </select>
           {errors.category && <p className="mt-1 text-sm text-red-500">{errors.category.message}</p>}
