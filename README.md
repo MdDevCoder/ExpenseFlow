@@ -1,5 +1,7 @@
 # ExpenseFlow 
 
+**[Live Demo](https://expense-flow-kago08efw-shaikh-muhammad-s-projects0423.vercel.app/)**
+
 ![ExpenseFlow Hero](frontend/src/assets/hero.png) <!-- Ensure you have a hero image or remove this if not present -->
 
 ExpenseFlow is a modern, full-stack Personal Finance Management (PFM) application built with the MERN stack. It transforms raw transactions into actionable insights, featuring complex MongoDB aggregations for real-time reporting, budget tracking, and beautiful Recharts analytics.
